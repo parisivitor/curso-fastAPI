@@ -1,0 +1,5 @@
+virtualenv -p python3 .venv                 -> cria o venv pro projeto
+.venv/Scripts/activate                      -> ativa o venv
+pip install fastapi uvicorn gunicorn        -> instala o fastapi e uvcorn no projeto novo
+pip freeze > requiremennts.txt              -> adiciona as bibli do pip no venv
+uvicorn main:app --reload --port 8000       -> sobe o servidor do uvcorn
